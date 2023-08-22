@@ -16,20 +16,22 @@
 - **Database** : mariaDB
 
 ## 📌 주요 기능
-#### 로그인 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Login)" >상세보기 - WIKI 이동</a>
-- flask를 이용한 통신
-- 회원가입 시스템
-#### 회원가입 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Member)" >상세보기 - WIKI 이동</a>
-- ID 중복 체크
-- 비밀번호 일치 체크
-#### 메인 페이지 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(Member)" >상세보기 - WIKI 이동</a>
-- 회원 목록
-- 회원정보 변경
+### ✔️ 로그인 
+ - 로그인 할때 flask로 json 형식의 api 전송
+ - 받은 값으로 mariadb에서 사용자 확인
+ - 사용자가 확인되면 결과값 반환
 
-#### 양품 판별 페이지 - <a href="https://github.com/chaehyuenwoo/SpringBoot-Project-MEGABOX/wiki/%EC%A3%BC%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EC%86%8C%EA%B0%9C(%EC%98%81%ED%99%94-%EC%98%88%EB%A7%A4)" >상세보기 - WIKI 이동</a>
-- 이미지 업로드
-- 업로드 이미지 띄우기
-- 업로드한 이미지 양품 판별 후 예측 결과 출력
+### ✔️ 회원가입
+ - 입력한 ID를 DB에서 비교하여 중복 체크
+ - 비밀번호와 비밀번호 확인란이 일치하는지 체크
+
+### ✔️ 메인 페이지
+ - 회원가입할 때 작성한 이름, 이메일, 생년월일을 DB에서 가져와서 보여주고 수정 가능
+ - 양품 판별 페이지로 이동 가능
+
+### ✔️ 양품 판별 페이지
+ - 판별할 이미지 업로드
+ - 업로드한 이미지를 제작한 모델을 통해 양품을 판단하고, 이미지 출력 및 판단 결과 출
 
 ## Acknowledgement
 ```
